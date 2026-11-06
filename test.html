@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心理测试｜你最像后会友期哪位嘉宾</title>
+    <style>
+        *{box-sizing:border-box;margin:0;padding:0;font-family:"Microsoft Yahei",sans-serif;}
+        body{background:#f4f7fa;padding:20px;max-width:720px;margin:0 auto;}
+        .container{background:#fff;border-radius:16px;padding:30px;box-shadow:0 4px 16px #00000015;}
+        h1{text-align:center;color:#333;margin-bottom:8px;font-size:24px;}
+        .desc{text-align:center;color:#666;margin-bottom:30px;}
+        .q-item{margin-bottom:24px;}
+        .q-title{font-weight:bold;margin-bottom:12px;color:#222;}
+        label{display:block;padding:10px 14px;border:1px solid #ddd;border-radius:10px;margin:8px 0;cursor:pointer;transition:0.2s;}
+        label:hover{border-color:#6c8cff;background:#f4f7ff;}
+        input[type="radio"]{margin-right:8px;}
+        #submitBtn{width:100%;padding:14px;border:none;background:#5b7cff;color:white;font-size:18px;border-radius:12px;cursor:pointer;margin-top:10px;}
+        #submitBtn:hover{background:#4563e8;}
+        #resultBox{margin-top:30px;padding:24px;border:1px solid #e2e8ff;border-radius:14px;background:#f7f9ff;display:none;}
+        .result-name{font-size:22px;font-weight:bold;margin-bottom:12px;color:#3b5bdd;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>心理测试：你最像《后会友期》哪位嘉宾</h1>
+    <div class="desc">一共10道单选题，选择最贴合你的选项</div>
+
+    <form id="testForm">
+        <!-- Q1 -->
+        <div class="q-item">
+            <div class="q-title">Q1：朋友无意间做了一件让你受伤的事，你会？</div>
+            <label><input type="radio" name="q1" value="mt"> A.默默放在心里，慢慢疏远，尽量维持体面</label>
+            <label><input type="radio" name="q1" value="zm"> B.直接说出不满，当场沟通</label>
+            <label><input type="radio" name="q1" value="ln"> C.这件事会记很久，很难完全放下</label>
+            <label><input type="radio" name="q1" value="wz"> D.冷静理清对错，分清楚人情和规则</label>
+        </div>
+        <!-- Q2 -->
+        <div class="q-item">
+            <div class="q-title">Q2：多年老友之间产生很深的误会，你愿意坐下来深度对峙吗？</div>
+            <label><input type="radio" name="q2" value="mt"> A.可以见面，但不想激烈争吵，希望体面收尾</label>
+            <label><input type="radio" name="q2" value="wj"> B.只要能解开问题，我愿意主动发起沟通</label>
+            <label><input type="radio" name="q2" value="ln"> C.内心很纠结，害怕再次揭开伤疤</label>
+            <label><input type="radio" name="q2" value="xf"> D.如果一定要说清楚，我会直白说出全部想法</label>
+        </div>
+        <!-- Q3 -->
+        <div class="q-item">
+            <div class="q-title">Q3：陷入尴尬、充满压力的社交场面时，你的选择？</div>
+            <label><input type="radio" name="q3" value="mt"> A.悄悄抽离，给自己空间消化情绪</label>
+            <label><input type="radio" name="q3" value="zm"> B.主动掌控节奏，推动事情往前走</label>
+            <label><input type="radio" name="q3" value="ln"> C.沉默防御，不轻易袒露内心</label>
+            <label><input type="radio" name="q3" value="xf"> D.直面冲突，不回避矛盾</label>
+        </div>
+        <!-- Q4 -->
+        <div class="q-item">
+            <div class="q-title">Q4：一段友情里，对你最重要的是？</div>
+            <label><input type="radio" name="q4" value="mt"> A.互相尊重的边界感</label>
+            <label><input type="radio" name="q4" value="xf"> B.真诚直接，不拐弯抹角</label>
+            <label><input type="radio" name="q4" value="ln"> C.绝对的信任，不能有背叛</label>
+            <label><input type="radio" name="q4" value="wz"> D.人情与付出的对等公平</label>
+        </div>
+        <!-- Q5 -->
+        <div class="q-item">
+            <div class="q-title">Q5：曾经断交很久的朋友重新来找你</div>
+            <label><input type="radio" name="q5" value="wj"> A.可以和解，但很难回到从前亲密状态</label>
+            <label><input type="radio" name="q5" value="zm"> B.抓住机会把当年的矛盾一次性说开</label>
+            <label><input type="radio" name="q5" value="ln"> C.内心防备很重，很难相信对方</label>
+            <label><input type="radio" name="q5" value="wz"> D.看当年事情的对错再决定态度</label>
+        </div>
+        <!-- Q6 -->
+        <div class="q-item">
+            <div class="q-title">Q6：和旧友一起旅行，出现观念分歧时？</div>
+            <label><input type="radio" name="q6" value="mt"> A.不会硬碰硬，悄悄迁就保持氛围体面</label>
+            <label><input type="radio" name="q6" value="zm"> B.直接说出想法，希望立刻达成共识</label>
+            <label><input type="radio" name="q6" value="ln"> C.心里默默难过，反复回想过往委屈</label>
+            <label><input type="radio" name="q6" value="xf"> D.理性讨论，坚持自己真实观点不妥协</label>
+        </div>
+        <!-- Q7 -->
+        <div class="q-item">
+            <div class="q-title">Q7：别人提起你过去受伤的往事</div>
+            <label><input type="radio" name="q7" value="mt"> A.轻描淡写带过，不想深入谈论</label>
+            <label><input type="radio" name="q7" value="wj"> B.坦然复盘，不怕再次提起</label>
+            <label><input type="radio" name="q7" value="ln"> C.瞬间紧绷，不愿触碰这段回忆</label>
+            <label><input type="radio" name="q7" value="wz"> D.客观评判对错，不被情绪裹挟</label>
+        </div>
+        <!-- Q8 -->
+        <div class="q-item">
+            <div class="q-title">Q8：友情里发生争执，你最不能接受？</div>
+            <label><input type="radio" name="q8" value="mt"> A.边界被随意冒犯</label>
+            <label><input type="radio" name="q8" value="xf"> B.刻意隐瞒、拐弯抹角</label>
+            <label><input type="radio" name="q8" value="ln"> C.被曾经信任的人辜负</label>
+            <label><input type="radio" name="q8" value="wz"> D.付出不对等，单方面消耗</label>
+        </div>
+        <!-- Q9 -->
+        <div class="q-item">
+            <div class="q-title">Q9：如果已经和朋友和解，但内心依旧有隔阂</div>
+            <label><input type="radio" name="q9" value="mt"> A.维持礼貌距离，不再强求亲密</label>
+            <label><input type="radio" name="q9" value="zm"> B.持续沟通直到完全解开所有心结</label>
+            <label><input type="radio" name="q9" value="ln"> C.表面平静，伤口依旧难以愈合</label>
+            <label><input type="radio" name="q9" value="wz"> D.接受现状，分清可以相处的边界</label>
+        </div>
+        <!-- Q10 -->
+        <div class="q-item">
+            <div class="q-title">Q10：对于多年旧友关系，你的核心期待是？</div>
+            <label><input type="radio" name="q10" value="mt"> A.彼此尊重，舒服自在最重要</label>
+            <label><input type="radio" name="q10" value="wj"> B.不留遗憾，想说的话一定要说出口</label>
+            <label><input type="radio" name="q10" value="ln"> C.永不背叛，长久不变的信任</label>
+            <label><input type="radio" name="q10" value="xf"> D.真诚摊牌，接纳全部真实想法</label>
+        </div>
+
+        <button type="button" id="submitBtn">查看测试结果</button>
+    </form>
+
+    <div id="resultBox">
+        <div class="result-name" id="resName"></div>
+        <div id="resDesc"></div>
+    </div>
+</div>
+
+<script>
+//人物结果文案
+const resultData = {
+    mt:{
+        name:"✨匹配嘉宾：马天宇",
+        desc:"性格画像：你心思细腻敏感，拥有很强的内心边界感。遇到矛盾不会激烈爆发，更偏向体面地保持距离，习惯独自消化情绪。你重视内心安宁，哪怕和解，也不会勉强自己强行回到过去亲密的状态。"
+    },
+    zm:{
+        name:"✨匹配嘉宾：张萌",
+        desc:"性格画像：你目标感强、性格直率果敢。遇到心结愿意主动出击推动沟通，敢于直面问题。有时候说话直接，容易在情绪上头时说出决绝的话，但内心依然期待关系可以找到解法。"
+    },
+    ln:{
+        name:"✨匹配嘉宾：厉娜",
+        desc:"性格画像：你很重感情，一旦被信任的人伤害，心结会埋藏很多年。你很难轻易释怀背叛感，内心防御厚重，重新敞开心扉需要极大的勇气，受伤后的记忆很难彻底抹平。"
+    },
+    xf:{
+        name:"✨匹配嘉宾：许飞",
+        desc:"性格画像：你忠于自我，不回避冲突。哪怕话题尖锐、场面尴尬，你也愿意把真实想法摊开来讲，拒绝模糊的敷衍。你认为真正的和解建立在坦诚说出所有想法之上。"
+    },
+    wz:{
+        name:"✨匹配嘉宾：王子璇",
+        desc:"性格画像：你恩怨分明，极度看重关系里的公平对等。你可以清晰划分人情与现实规则，一旦边界被打破，你会果断守住底线，不会因为多年情谊无底线让步。"
+    },
+    wj:{
+        name:"✨匹配嘉宾：文吉儿",
+        desc:"性格画像：你十分珍视情感联结，习惯用“人情”看待朋友之间的相处。你期待亲密的、不分彼此的友谊，常常希望旧友可以修复裂痕，重新找回当初的温暖。"
+    }
+};
+
+document.getElementById("submitBtn").onclick = function(){
+    //计分重置
+    let score = {mt:0,zm:0,ln:0,xf:0,wz:0,wj:0};
+    //遍历10题
+    const qList = ["q1","q2","q3","q4","q5","q6","q7","q8","q9","q10"];
+    for(let q of qList){
+        const selected = document.querySelector(`input[name="${q}"]:checked`);
+        if(!selected){
+            alert("请完成全部10道题目！");
+            return;
+        }
+        score[selected.value] +=2;
+    }
+    //找最高分
+    let maxKey = "mt";
+    let maxVal = score.mt;
+    for(let k in score){
+        if(score[k]>maxVal){
+            maxVal = score[k];
+            maxKey = k;
+        }
+    }
+    //展示结果
+    document.getElementById("resName").innerText = resultData[maxKey].name;
+    document.getElementById("resDesc").innerText = resultData[maxKey].desc;
+    document.getElementById("resultBox").style.display = "block";
+}
+</script>
+</body>
+</html>
